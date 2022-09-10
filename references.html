@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/4195481e45.js" crossorigin="anonymous"></script>
+
+    <!-- HTML5Shiv -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <![endif]-->
+
+    <!-- Estilo customizado -->
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <title>OrchidCounts</title>
+
+</head>
+<body>
+
+    <!-- Início do cabeçalho --> 
+    <header id="header">
+        <nav class="navbar navbar-expand-lg bg-light px-5" style="background-color: #2D3A3A">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><span id="title1">Orchid</span><span id="title2">Counts</span></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html #about">About</a>
+                  </li>
+                </ul>
+                <span id="subtitle" class="navbar-text">
+                  an Orchidaceae cytogenetic counts database
+                </span>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-- Fim do cabeçalho-->
+
+    <!-- Início do corpo principal -->
+    <main class="parallax py-4" style="background-image: url('images/background2.svg')">
+
+        <section id="references" class="container my-4">
+
+            <table id="references-table" class="fs-6">
+              <thead>
+                <tr>
+                  <th><input class="form-control" placeholder="..." aria-describedby="basic-addon1" type="text" id="txtColuna1"/></th>
+                </tr>
+              </thead>
+                <tbody>
+                  <tr>
+                    <td>Afzelius (1954)</td>
+                    <td>Afzelius, K. (1954). Embryo sac development in Epipogium aphyllum. Svensk Botanisk Tidskrift, 48(2), 513—520.</td>
+                  </tr>
+                  <tr>
+                    <td>Ahmadian et al. (2017)</td>
+                    <td>Ahmadian, M., Babaei, A., Ahmadi, N., Rasoli, O. (2017). Genome size diversity of some species of Cephalanthera from Iran. Caryologia, 70(3), 206–210. https://doi.org/10.1080/00087114.2017.1321310</td>
+                  </tr>
+                  <tr>
+                    <td>Aoyama (2008)</td>
+                    <td>Aoyama, M. (2008). Cytological studies on two saprophytic orchid-species of Neottia asiatica Ohwi and Epipogium japonicum Makino. Chromosome Botany, 3(2), 49–52. https://doi.org/10.3199/iscb.3.49</td>
+                  </tr>
+                  <tr>
+                    <td>Aoyama (2011)</td>
+                    <td>Aoyama, M. (2011). Cytological studies on two species of Epipogium, myco-heterotrophic orchids. Chromosome Botany, 6(1), 1–4. https://doi.org/10.3199/iscb.6.1</td>
+                  </tr>
+                  <tr>
+                    <td>Aoyama Lee (2012)</td>
+                    <td>Aoyama, M., Lee, Y.-I. (2012). Cytological studies on three species of Gastrodia, myco-heterotrophic orchids. Chromosome Botany, 7(4), 113–116. https://doi.org/10.3199/iscb.7.113</td>
+                  </tr>
+                  <tr>
+                    <td>Aoyama Tanaka (1985)</td>
+                    <td>Aoyama, M., Tanaka, R. (1985). Somatic chromosome number of Gastrodia elata, a saprophyte. Chromosome Information Service, 39, 27–28.</td>
+                  </tr>
+                  <tr>
+                    <td>Aoyama Tanaka (1986)</td>
+                    <td>Aoyama, M., Tanaka, R. (1986). Karyomorphological studies in Gastrodia elata and G. confusa. Kromosomo, 42, 1336–1340.</td>
+                  </tr>
+                  <tr>
+                    <td>Aoyama Yokota (2012a)</td>
+                    <td>Aoyama, M., Yokota, M. (2012a). Chromosome number of Gastrodia javanica (Blume) Lindl., a myco-heterotrophic orchid. Chromosome Science, 14(1), 39–40. https://doi.org/10.11352/scr.14.39</td>
+                  </tr>
+                  <tr>
+                    <td>Aoyama Yokota (2012b)</td>
+                    <td>Ayoama, M., Yokota, M. (2012b). Cytological Studies on Stereosandra javanica, a Myco-heterotrophic Orchid. Acta Phytotaxonomica et Geobotanica, 62(2, 3), 99–102. https://doi.org/10.1097/00000446-195812000-00040</td>
+                  </tr>
+                  <tr>
+                    <td>Arohonka (1982)</td>
+                    <td>Arohonka, T. (1982). Chromosome counts of vascular plants of the island Seili in Nauvo, southwestern Finland. Turun Yliopiston Julkaisuja, Sar. A 2, Biol.-Geogr., 3, 1–12.</td>
+                  </tr>
+                  <tr>
+                    <td>Aryavand (1983)</td>
+                    <td>Aryavand, A. (1983). Contribution a l’etude cytotaxonomique des Cruciferes de l’Iran. Bulletin de La Société Neuchâteloise de Sciences Naturelles, 106, 123–130.</td>
+                  </tr>
+                  <tr>
+                    <td>Averyanov (1979)</td>
+                    <td>Averyanov, L. V. (1979). Chromosome numbers of some species of Orchidaceae from the northwestern part of the USSR. Botanicheskii Zhurnal, 64(6), 863–877.</td>
+                  </tr>
+                  <tr>
+                    <td>Averyanov et al. (1982a)</td>
+                    <td>Averyanov, L. V., Averyanova, E. L., Lavrenko, A. N. (1982). Karyosystematic study of orchids (Orchidaceae) on the territory of the Komi ASSR. Botanicheskii Zhurnal, 67(11), 1491–1499.</td>
+                  </tr>
+                  <tr>
+                    <td>Averyanov et al. (1982b)</td>
+                    <td>Averyanov, L. V., Averyanova, E. L., Lavrenko, A. N. (1982).A caryosystematic study of the orchids (Orchidaceae) of the Pechoro-Ilychsky reservation. Botanicheskii Zhurnal, 67(7), 945–951.</td>
+                  </tr>
+                  <tr>
+                    <td>Averyanov et al. (1985)</td>
+                    <td>Averyanov, L. V., Medvedeva, N. A., Serov, V. P. (1985). Chromosome numbers in the representatives of the family Orchidaceae from the Caucasus. Botanicheskii Zhurnal SSSR, 70(7), 999–1000.</td>
+                  </tr>
+                  <tr>
+                    <td>Baldwin Speese (1957)</td>
+                    <td>Baldwin, J. T., Speese, B. M. (1957). CHROMOSOMES OF POGONIA AND OF ITS ALLIES IN THE RANGE OF GRAY’S MANUAL. American Journal of Botany, 44(8), 651–653. https://doi.org/10.1002/j.1537-2197.1957.tb08245.x</td>
+                  </tr>
+                  <tr>
+                    <td>Baranow et al. (2022)</td>
+                    <td>...</td>
+                  </tr>
+                  <tr>
+                    <td>Barber (1942)</td>
+                    <td>Barber, H. N. (1942). The pollen-grain division in the Orchidaceae. Journal of Genetics, 43, 97–103.</td>
+                  </tr>
+                  <tr>
+                    <td>Bartolo et al. (2003)</td>
+                    <td>Bartolo, G., D’emerigo, S., Pulvirenti, S., Terrasi, M. C., Stuto, S. (2003). Cytotaxonomical considerations on Epipactis robatschiana (Orchidaceae), new species from Calabria (S Italy). Caryologia, 56(4), 439–445.</td>
+                  </tr>
+                  <tr>
+                    <td>Bernardos Amich (2002)</td>
+                    <td>Bernardos, S., Amich, F. (2002). Karyological, taxonomic and chorological notes on the Orchidaceae of the Central-Western Iberian Peninsula. Belgian Journal of Botany, 135(1), 76–87. https://doi.org/10.2307/20794500</td>
+                  </tr>
+                  <tr>
+                    <td>Bernardos et al. (2003)</td>
+                    <td>Bernardos, S., Amich, F., Crespí, A. (2003). Karyological and taxonomical notes on three species of the genus Epipactis (Neottioideae, Orchidaceae) in the central-western Iberian Peninsula. Folia Geobotanica, 38(3), 319–331. https://doi.org/10.1007/BF02803202</td>
+                  </tr>
+                  <tr>
+                    <td>Bernardos et al. (2004)</td>
+                    <td>Bernardos, S., Tyteca, D., Revuelta., J. L, Amich, F. (2004). A new endemic species of Epipactis (Orchidaceae) from north-east Portugal. Botanical Journal of the Linnean Society, 145, 239–249.</td>
+                  </tr>
+                  <tr>
+                    <td>Bianco et al. (1987)</td>
+                    <td>Bianco, P., Medagli, P., D’emerico, S., Ruggiero, L. (1987). In Numeri cromosomici per la flora italiana: 1139-1155. Informatore Botanico Italiano, 19(3), 322–332.</td>
+                  </tr>
+                  <tr>
+                    <td>Biswas (1980b)</td>
+                    <td>Biswas, B. K. (1980b). In IOPB Chromosome Number Reports LXVI. Taxon, 29, 169.</td>
+                  </tr>
+                  <tr>
+                    <td>Capineri Giardini (1995)</td>
+                    <td>Capineri, R., Giardini, M. (1995). In Numeri cromosomici per la flora italiana. Informatore Botanico Italiano, 26(2–3), 187–190.</td>
+                  </tr>
+                  <tr>
+                    <td>Capineri Rossi (1988)</td>
+                    <td>Capineri, R., Rossi, W. (1988). In Numeri cromosomici per la flora italiana: 1127-1135. Informatore Botanico Italiano, 19(3), 314–318.</td>
+                  </tr>
+                  <tr>
+                    <td>Cauwet Balayer (1984)</td>
+                    <td>Cauwet, A. M., Balayer, M. (1984). Cauwet Balayer (1984) Bulletin de La Société Botanique de France, 131(2), 123.</td>
+                  </tr>
+                  <tr>
+                    <td>Cauwet-Marc Balayer (1984)</td>
+                    <td>Cauwet-Marc, A.-M., Balayer, M. (1984). Les Orchidées du Bassin méditerranéen Contribution à l’étude caryologique des espèces des Pyrénées orientales (France) et contrées limitrophes—Tribu des Neottiae Lindl. Bulletin de La Société Botanique de France. Lettres Botaniques, 131(2), 121–137. https://doi.org/10.1080/01811797.1984.10824623</td>
+                  </tr>
+                  <tr>
+                    <td>Chen et al. (2020)</td>
+                    <td>Chen, S., Wang, X., Wang, Y., Zhang, G., Song, W., Dong, X., Arnold, M. L., Wang, W., Miao, J., Chen, W., Dong, Y. (2020). Improved de novo Assembly of the Achlorophyllous Orchid Gastrodia elata. Frontiers in Genetics, 11, 1–10. https://doi.org/10.3389/fgene.2020.580568</td>
+                  </tr>
+                  <tr>
+                    <td>Chennaveeraiah Jorapur (1966)</td>
+                    <td>Chennaveeraiah, M. S., Jorapur, S. M. (1966). Chromosome number and morphology in five species of Nervilia Gaud. The Nucleus, 9, 39–44. https://doi.org/Chennaveeraiah, M.S. Jorapur, S.M. (1966). Chromosome number and morphology in five species of Nervilia Gaud. The Nucleus 9: 39–44.</td>
+                  </tr>
+                  <tr>
+                    <td>Coutinho (1957)</td>
+                    <td>Coutinho, L. (1957). Nota sobre a constituiçao cromosómica do Limodorum trabutianum e do Limodorum abortivum (L.) Sw. Agronomia Lusitana, 19, 219–230.</td>
+                  </tr>
+                  <tr>
+                    <td>D'Emerico et al. (2000)</td>
+                    <td>D’Emerico, S., Pignone, D., Scrugli, A. (2000). Karyomorphology and Evolution in Italian Populations of Three Neottieae Species (Orchidaceae). CYTOLOGIA, 65(2), 189–195. https://doi.org/10.1508/cytologia.65.189</td>
+                  </tr>
+                  <tr>
+                    <td>D'Emerico et al. (2007)</td>
+                    <td>D’emerigo, S., Bartolo, G., Pulvirenti, S., Terrasi, M. C., Cogoni, A., Scrugli, A. (2007). Mutazioni cromosomiche nella Trib Neottieae (Orchidaceae). Informatore Botanico Italiano, 39(Suppl.1), 98–101.</td>
+                  </tr>
+                  <tr>
+                    <td>D’Emerico et al. (1999)</td>
+                    <td>D’Emerico, S., Grünanger, P., Scrugli, A., Pignone, D. (1999). Karyomorphological parameters and C-band distribution suggest phyletic relationships within the subtribe Limodorinae (Orchidaceae). Plant Systematics and Evolution Volume, 217, 147–161.</td>
+                  </tr>
+                  <tr>
+                    <td>Darlington Wylie (1955)</td>
+                    <td>Darlington, C. D., Wylie, A. P. (1955). Chromosome atlas of flowering plants. Allen Unwin.</td>
+                  </tr>
+                  <tr>
+                    <td>Dawson et al. (2007)</td>
+                    <td>Dawson, M. I., Molloy, B. P. J., Beuzenberg, E. J. (2007). Contributions to a chromosome atlas of the New Zealand flora—39. Orchidaceae. New Zealand Journal of Botany, 45(4), 611–684. https://doi.org/10.1080/00288250709509743</td>
+                  </tr>
+                  <tr>
+                    <td>Del Prete Giordani (1978)</td>
+                    <td>Del Prete, C., Giordani, A. (1978). In Numeri cromosomici per la flora italiana:434-446. Informatore Botanico Italiano, 10(1), 119–129.</td>
+                  </tr>
+                  <tr>
+                    <td>Engelskjon (1979)</td>
+                    <td>Engelskjon, T. (1979). Chromosome numbers in vascular plants from Norway, including Svalbard. Opera Botanica, 52, 1–38.</td>
+                  </tr>
+                  <tr>
+                    <td>Felix Guerra (2010)</td>
+                    <td>Felix, L. P., Guerra, M. (2010). Variation in chromosome number and the basic number of subfamily Epidendroideae (Orchidaceae). Botanical Journal of the Linnean Society, 163(2), 234–278. https://doi.org/10.1111/j.1095-8339.2010.01059.x</td>
+                  </tr>
+                  <tr>
+                    <td>Gadella Kliphuis (1963)</td>
+                    <td>Gadella, T. W. J., Kliphuis, E. (1963). CHROMOSOME NUMBERS OF FLOWERING PLANTS IN THE NETHERLANDS. Acta Botanica Neerlandica, 12(2), 195–230. https://doi.org/10.1111/j.1438-8677.1963.tb00115.x</td>
+                  </tr>
+                  <tr>
+                    <td>Gale et al. (2015)</td>
+                    <td>>Gale, S. W., Li, J., Kinoshita, A., Yukawa, T. (2015). Studies in Asian Nervilia (Orchidaceae) V: Nervilia futago, a Cryptic New Species from Southwest Japan Confirmed by Morphological, Cytological, and Molecular Analyses. Systematic Botany, 40(2), 413–425. http://www.jstor.org/stable/24546460</td>
+                  </tr>
+                  <tr>
+                    <td>Garbari (1971)</td>
+                    <td>Garbari, F. (1971). B chromosomes in “Listera ovata” (L.) R. Br. (“Orchidaceae”). Preliminary observations in italian populations. Informatore Botanico Italiano, 3(3), 221.</td>
+                  </tr>
+                  <tr>
+                    <td>Garbari (1971)</td>
+                    <td>Garbari, F. (1971). B chromosomes in Listera ovata (L.) R. Br. (Orchidaceae). Preliminary observations in Italian populations. Informatore Botanico Italiano, 3, 216–221.</td>
+                  </tr>
+                  <tr>
+                    <td>Giuseppina et al. (2010)</td>
+                    <td>Giuseppina, B., Brullo, C., Pulvirenti, S., Scrugli, A., Terrasi, M. C., D’Emerico, S. (2010). Advances in chromosomal studies in Neottieae (Orchidaceae): constitutive heterochromatin, chromosomal rearrangements and speciation. Caryologia, 63(2), 184–191. https://doi.org/10.1080/00087114.2010.10589725</td>
+                  </tr>
+                  <tr>
+                    <td>Goldblatt (1981)</td>
+                    <td>Goldblatt, P. (1981). Index to plant chromosome numbers 1975–1978. St Louis, MO: Missouri Botanical Garden.</td>
+                  </tr>
+                  <tr>
+                    <td>Goldblatt (1984)</td>
+                    <td>Goldblatt, P. (1984). Index to plant chromosome numbers 1979–1981. St Louis, MO: Missouri Botanical Garden.</td>
+                  </tr>
+                  <tr>
+                    <td>Goldblatt (1985)</td>
+                    <td>Goldblatt, P. (1985). Index to plant chromosome numbers 1982–1983. St Louis, MO: Missouri Botanical Garden</td>
+                  </tr>
+                  <tr>
+                    <td>Goldblatt (1988)</td>
+                    <td>Goldblatt, P. (1988). Index to plant chromosome numbers 1984–1985. St Louis, MO: Missouri Botanical Garden.</td>
+                  </tr>
+                  <tr>
+                    <td>Goldblatt Johnson (1990) </td>
+                    <td>Goldblatt P, Johnson, D. E. (1990). Index to plant chromosome numbers 1986–1987. St Louis, MO: Missouri Botanical Garden.</td>
+                  </tr>
+                  <tr>
+                    <td>Goldblatt Johnson (1991)</td>
+                    <td>Goldblatt P, Johnson, D. E. (1991). Index to plant chromosome numbers 1988–1989. St Louis, MO: Missouri Botanical Garden.</td>
+                  </tr>
+                  <tr>
+                    <td>Goldblatt Johnson (1994) </td>
+                    <td>Goldblatt P, Johnson, D. E. (1994). Index to plant chromosome numbers 1990–1991. St Louis, MO: Missouri Botanical Garden</td>
+                  </tr>
+                  <tr>
+                    <td>Goldblatt Johnson (1996)</td>
+                    <td>Goldblatt P, Johnson, D. E. (1996). Index to plant chromosome numbers 1992–1993. St Louis, MO: Missouri Botanical Garden.</td>
+                  </tr>
+                  <tr>
+                    <td>Goldblatt Johnson (2000)</td>
+                    <td>Goldblatt P, Johnson, D. E. (2000). Index to plant chromosome numbers 1992–1993. St Louis, MO: Missouri Botanical Garden.</td>
+                  </tr>
+                  <tr>
+                    <td>Goldblatt Johnson (2003)</td>
+                    <td>Goldblatt P, Johnson, D. E. (2003). Index to plant chromosome numbers 1992–1993. St Louis, MO: Missouri Botanical Garden</td>
+                  </tr>
+                  <tr>
+                    <td>Goldblatt Johnson (2006)</td>
+                    <td>Goldblatt P, Johnson, D. E. (2006). Index to plant chromosome numbers 1992–1993. St Louis, MO: Missouri Botanical Garden</td>
+                  </tr>
+                  <tr>
+                    <td>Gurzenkov (1973)</td>
+                    <td>Gurzenkov, N. N. (1973). Studies of chromosome numbers of plants from the south of the Soviet Far East. Komarov Lectures, 20, 47–61.</td>
+                  </tr>
+                  <tr>
+                    <td>Hagerup (1944)</td>
+                    <td>Hagerup, O. (1944). Notes on some boreal polyploids. Hereditas, 30, 152–160.</td>
+                  </tr>
+                  <tr>
+                    <td>Hagerup (1945)</td>
+                    <td>Hagerup, O. (1945). Facultative parthenogenesis and haploidy in Epipactis latifolia. K. Dansk VidenskabK. Dansk Videnskab. Selskab. Biol. Meddel . Selskab. Biol. Meddel, 19(11), 1–13.</td>
+                  </tr>
+                  <tr>
+                    <td>Hagerup (1947)</td>
+                    <td>Hagerup, O. (1947). The spontaneous formation of haploid, polyploid and aneuploid embryos in some orchids. K. Dansk VidenskabK. Dansk Videnskab. Selskab. Biol. Meddel . Selskab. Biol. Meddel, 20(9), 1–22.</td>
+                  </tr>
+                  <tr>
+                    <td>Hallonová (1982)</td>
+                    <td>Hallonová, A. (1982). Floristické pomery horskej skupiny Skalky (Strážovské vrchy). Stredné Slovensko, 2, 308–323.</td>
+                  </tr>
+                  <tr>
+                    <td>Hsu (1971)</td>
+                    <td>Hsu, C. C. (1971). Preliminary chromosome studies on the vascular plants of Taiwan (IV). Counts and some systematic notes on some monocotyledons. Taiwania, 16, 123–136.</td>
+                  </tr>
+                  <tr>
+                    <td>Hsu (1972)</td>
+                    <td>Hsu, C. C. (1972). Preliminary chromosome studies on the vascular plants of Taiwan (V). Cytotaxonomy on some monocotyledons. Taiwania, 17(1), 48–65.</td>
+                  </tr>
+                  <tr>
+                    <td>Kben Engelskjon (1967)</td>
+                    <td>Kben, G., Engelskjon, T. (1967). Chromosome numbers of Scandinavian arctic-alpine plant species. II. Act. Boreal. A. Sci., 21, 1–57.</td>
+                  </tr>
+                  <tr>
+                    <td>Kliphuis (1963)</td>
+                    <td>Kliphuis, E. (1963). Cytological observations in relation to the taxonomy of the orchids of the Netherlands. Acta Botanica Neerlandica, 12(2), 172–194.</td>
+                  </tr>
+                  <tr>
+                    <td>Krahulcovă (1991)</td>
+                    <td>Krahulcovă, A. (1991). Selected chromosome counts of the Czechoslovak flora III. Folia Geobot. Phytotax, 26(3), 225–368.</td>
+                  </tr>
+                  <tr>
+                    <td>Krogulevich (1978)</td>
+                    <td>Krogulevich, R. E. (1978). Kariologicheskij analiz vidov flory Vostochnogo Sajana. V Flora Pribajkalja, 19–48.</td>
+                  </tr>
+                  <tr>
+                    <td>Kulkarni (1977)</td>
+                    <td>Kulkarni, H. D. (1977). Karyomorphological studies in the two species of Orchidaceae. Proc. Indian Sci. Congr. Assoc., 64, 150–151.</td>
+                  </tr>
+                  <tr>
+                    <td>Kulkarni Jorapur (1979)</td>
+                    <td>Kulkarni, H., Jorapur, S. M. (1979). In IOPB Chromosome Number Reports LXIV. Taxon, 28, 392.</td>
+                  </tr>
+                  <tr>
+                    <td>Kusano (1915)</td>
+                    <td>Kusano, S. (1915). Experimental studies on the embrional development in an angiosperm. Jour. Coll. Agric. Imp. Univ. Tokyo, 6(1), 7–120.</td>
+                  </tr>
+                  <tr>
+                    <td>Laan Lie (1985)</td>
+                    <td>Laane, M. M., Lie, T. (1985). Fremstilling av kromosompreparater med enkle metoder. Blyttia, 1985, 7–15.</td>
+                  </tr>
+                  <tr>
+                    <td>Laane (1969)</td>
+                    <td>Laane, M. M. (1969). Further chromosome studies in Norwegian vascular plants. Blyttia, 27, 5–17.</td>
+                  </tr>
+                  <tr>
+                    <td>Lee Kim (1986)</td>
+                    <td>Lee, W. B., Kim, Y. S. (1986). A taxonomic study on genus Cephalanthera in Korea. Korean Journal of Plant Taxonomy, 16, 39–57.</td>
+                  </tr>
+                  <tr>
+                    <td>Leveque Gorenflot (1969)</td>
+                    <td>Leveque, M., Gorenflot, R. (1969). Prospections caryologiques dans la flore littorale du Boulonnais. Bulletin de La Société Botanique de France, 22, 27–58.</td>
+                  </tr>
+                  <tr>
+                    <td>Liang (1984)</td>
+                    <td>Liang, H. (1984). Investigation of the chromosome number of Gastrodia angusta S. Chow et S. C. Chen. Acta Botanica Yunnanica, 6, 311–312.</td>
+                  </tr>
+                  <tr>
+                    <td>Löve Kjellqvist (1973)</td>
+                    <td>Löve, A., Kjellqvist, E. (1973). Cytotaxonomy of Spanish plants. II. Monocotyledons. Lagascalia, 3(2), 147–182.</td>
+                  </tr>
+                  <tr>
+                    <td>Löve Löve (1942)</td>
+                    <td>Löve, A. Löve, D. (1942). Chromosome numbers of Scandinavian plant species. Botaniska Notiser, 1942, 19–59.</td>
+                  </tr>
+                  <tr>
+                    <td>Löve Löve (1981)</td>
+                    <td>Löve, A., Löve, D. (1981). In: IOPB Chromosome Number Reports LXXIII. Taxon, 30, 845–851.</td>
+                  </tr>
+                  <tr>
+                    <td>Lovka et al. (1971)</td>
+                    <td>Lovka, M., Susnik, F., Loeve, A., Loeve, D. (1971). In IOPB Chromosome Number Reports XXXIV. Taxon, 20, 785-797.</td>
+                  </tr>
+                  <tr>
+                    <td>Lövkvist Hultgård (1999)</td>
+                    <td>Lövkvist, B., Hultgård, U. M. (1999). Chromosome numbers in south Swedish vascular plants. Opera Botanica, 137, 1–42.</td>
+                  </tr>
+                  <tr>
+                    <td>Luque et al. (1984)</td>
+                    <td>Luque, T., Romero, C., Devesa, J. A. (1984). Números cromosómicos para la flora española, 12(2), 286–289.</td>
+                  </tr>
+                  <tr>
+                    <td>MacMahon (1936)</td>
+                    <td>MacMahon, B. (1936). Meiosis in the pollen mother-cells of Listera ovata. Cellule, 45, 209–262.</td>
+                  </tr>
+                  <tr>
+                    <td>Májovský et al. (1976)</td>
+                    <td>Májovský, J., et al. (1976). Index of chromosome numbers of Slovakian flora (Part 5). In Acta Fac. Rerum Nat. Univ. Comen., Bot. (Vol. 25).</td>
+                  </tr>
+                  <tr>
+                    <td>Májovský et al. (1978)</td>
+                    <td>Májovský, J., et al. (1978). Index of chromosome numbers of Slovakian flora (Part 6). Acta Fac. Rerum Nat. Univ. Comen., Bot., 26, 1–42.</td>
+                  </tr>
+                  <tr>
+                    <td>Malakhov (1990)</td>
+                    <td>Malakhova, L. A. (1990). Kariologocheskij analiz prirodnykh populjacij redkich i ischezajushchikh rastenij na juge Tomskoj Oblasti. Bjulleten’ Glavnogo Botanic|5eskogo Sada, 155, 60–66.</td>
+                  </tr>
+                  <tr>
+                    <td>Malakhova Markova (1994)</td>
+                    <td>Malakhova, L. A., Markova, G. A. (1994). Chromosome numbers in the flowering plants of Tomsk region. Botanicheskii Zhurnal, 79(7), 134–135.</td>
+                  </tr>
+                  <tr>
+                    <td>Malvesin-Fabre Eyme (1949)</td>
+                    <td>Malevin-Fabre, G., Eyme, J. (1949). Le noyau et la mitose chez Limodorum abortivum. Compt. Rend. Acad. Sci. Paris, 228, 2050–2051.</td>
+                  </tr>
+                  <tr>
+                    <td>Markova Cerneva (1982)</td>
+                    <td>Markova, M., Z. Cerneva. (1982). In IOPB Chromosome Number Reports LXXVII. Taxon, 31, 777.</td>
+                  </tr>
+                  <tr>
+                    <td>Markova Cherneva (1984)</td>
+                    <td>Markova, M. L., Cherneva, Z. M. (1984). Karyological studies on two new species to the Bulgarian flora. Fitologija, 27, 35–39.</td>
+                  </tr>
+                  <tr>
+                    <td>Mazzola et al. (1982)</td>
+                    <td>Mazzola, P., Miceli, P., Not, R. (1982). In Numeri cromosomici per la flora italiana:929-936. Informatore Botanico Italiano, 14(2–3), 275–279.</td>
+                  </tr>
+                  <tr>
+                    <td>Mehra Bawa (1962)</td>
+                    <td>Mehra, P. N., Bawa, K. S. (1962). Chromosome studies in Orchidaceae. Proceedings of 49th Indian Science Congress, 326–327.</td>
+                  </tr>
+                  <tr>
+                    <td>Mehra Bawa (1970)</td>
+                    <td>Mehra, P. N., Bawa, K. S. (1970). Cytological Observations on some Northwest Himalayan Orchids. Caryologia, 23(3), 273–282. https://doi.org/10.1080/00087114.1970.10796368</td>
+                  </tr>
+                  <tr>
+                    <td>Mehra Kashyap (1981)</td>
+                    <td>Mehra, P. N., Kashypa, S. K. (1981). In Chromosome Numbers Reports LXXI, Taxon, 30, 506-507.</td>
+                  </tr>
+                  <tr>
+                    <td>Mehra Kashyap (1989)</td>
+                    <td>Mehra, P. N., Kashyap, S. K. (1989). Cytol. Orchids North-W. Himalayas Pramodh P. Kapur at Raj Bandhu Industrial Co., New Delhi.</td>
+                  </tr>
+                  <tr>
+                    <td>Mehra Kashypa (1979)</td>
+                    <td>Mehra, P. N., Kashypa, S. K. (1979). In Chromosome Numbers Reports LXIV, Taxon, 28, 406-408.</td>
+                  </tr>
+                  <tr>
+                    <td>Mehra Pandita (1979)</td>
+                    <td>Mehra, P. N., Pandita, T. K. (1979). In: IOPB Chromosome Number Reports LXIV. Taxon, 28, 405.</td>
+                  </tr>
+                  <tr>
+                    <td>Mehra Vij (1970)</td>
+                    <td>Mehra, P. N., Vij, S. P. (1970). In IOPB Chromosome Number Reports XXV, Taxon, 19, 102-113.</td>
+                  </tr>
+                  <tr>
+                    <td>Mehra Vij (1972)</td>
+                    <td>Mehra, P. N., Vij, S. P. (1972). Cytological Studies in the East Himalayan Orchidaceae — 1: Neottieae. Caryologia, 25(3), 237–251. https://doi.org/10.1080/00087114.1972.10796479</td>
+                  </tr>
+                  <tr>
+                    <td>Meili-Frei (1966)</td>
+                    <td>Meili-Frei, E. (1966). Cytogenetik und Cytotaxonomic einheimicher Arten von Epipactis, Listera, Neottia (Orchidaceae) Soc. Bot. Suisse). Ber. Schweiz. Bot. Ges. (Bull. Soc. Bot. Suisse), 75, 219–292.</td>
+                  </tr>
+                  <tr>
+                    <td>Mered’a (1996)</td>
+                    <td>Mered’a, P. (1996). Epipactis pseudopurpurata Mereďa, spec. nova (Orchidaceae) – eine neue autogame Sitter-Art aus der Slowakei. Preslia, 68(1), 23–29.</td>
+                  </tr>
+                  <tr>
+                    <td>Mered’a Potuček (1998)</td>
+                    <td>Mered’a, P., Potuček, O. (1998). Epipactis futakii, spec. nova (Orchidaceae) – eine neue kleistogam blühende Sitter-Art aus der Slowakei. Preslia, 70(3), 247–258.</td>
+                  </tr>
+                  <tr>
+                    <td>Mesíček  Javůrková-Jarolímová (1992)</td>
+                    <td>Měsíček, J., Javůrková-Jarolímová, V. (1992). List of Chromosome Numbers of the Czech Vascular Plants. Botanical Institute of the Czechoslovak Academy of Sciences.</td>
+                  </tr>
+                  <tr>
+                    <td>Mičieta (1986)</td>
+                    <td>Mičieta, K. (1986). Karyological study of the Slovak flora XI. Acta Fac. Rerum Nat. Univ. Comen., Bot., 33, 51–55.</td>
+                  </tr>
+                  <tr>
+                    <td>Miduno (1938)</td>
+                    <td>Miduno, T. (1938). Chromosomenstudien an Orchidazeen. I. Karyotyp und Mixoploidie bei Cephalanthera und Epictatis. Cytologia, 8(3–4), 505–514.</td>
+                  </tr>
+                  <tr>
+                    <td>Montgomery et al. (1997)</td>
+                    <td>Montgomery, L., Khalaf, M., Bailey, J. P., Gornal, K. J. (1997). Contributions to a cytological catalogue of the British and Irish flora. Watsonia, 21, 365–368.</td>
+                  </tr>
+                  <tr>
+                    <td>Mora et al. (2018)</td>
+                    <td>Mora, J., Albertazzi, S., Bolaños-Villegas, P. (2018). Meiotic chromosome analysis in tropical orchid genus Sobralia. 18th European Orchid Council Conference and Exhibition, 119–120.</td>
+                  </tr>
+                  <tr>
+                    <td>Moscone et al. (2007)</td>
+                    <td>Moscone, E. A., Samuel, R., Schwarzacher, T., Schweizer, D., Pedrosa-Harand, A. (2007). Complex rearrangements are involved in Cephalanthera (Orchidaceae) chromosome evolution. Chromosome Research, 15(7), 931–943. https://doi.org/10.1007/s10577-007-1174-6</td>
+                  </tr>
+                  <tr>
+                    <td>Murín Májovský (1983)</td>
+                    <td>Murín, A., Májovský, J. (1983). Karyological study of Slovakian flora IV. Acta Fac. Rerum Nat. Univ. Comen., Bot., 30, 1–16.</td>
+                  </tr>
+                  <tr>
+                    <td>Nakata (2004)</td>
+                    <td>Nakata, M. (2004). Chromosome number of Gastrodia pubilabiata (Orchidaceae). Bulletin of the Botanic Gardens of Toyama, 9, 74.</td>
+                  </tr>
+                  <tr>
+                    <td>Ohno (1971)</td>
+                    <td>Ohno, R. (1971). Chromosome studies in some species of the phanerogamous plants. Seibutsu Kyozai Kikonai Marine Biol. Lab. Hokkaido Univ. Educ., 8, 69–71.</td>
+                  </tr>
+                  <tr>
+                    <td>Ono Masuda (1981)</td>
+                    <td>Ono, M., Masuda, Y. (1981). Chromosome numbers of some endemic species of the Bonin Islands II. Ogasawara Res., 4, 1–24.</td>
+                  </tr>
+                  <tr>
+                    <td>Pancho (1965)</td>
+                    <td>Pancho, J. V. (1965). In IOPB Chromosome Number Reports IV. Taxon, 14(3), 86–92.</td>
+                  </tr>
+                  <tr>
+                    <td>Pandita (1979)</td>
+                    <td>Pandita, T. K. (1979). Pandita, T. K. 1979. Cytological investigations of some monocots of Kashmir. Ph.D. Thesis. Panjab University, Chandigarh, India.</td>
+                  </tr>
+                  <tr>
+                    <td>Pandita (1986)</td>
+                    <td>Pandita, T. K. (1986). Cytological studies of some orchids of Kashmir. In S. P. Vij (Ed.), Biology, Conservation, and Culture of Orchids (pp. 163–172).</td>
+                  </tr>
+                  <tr>
+                    <td>Probatova (2006a)</td>
+                    <td>Probatova, N. S. (2006a). Chromosome numbers of vascular plants from nature reserves of the Primorsky Territory and the Amur River basin. Bot. Žhurn. (Moscow Leningrad), 91(7), 1117–1134.</td>
+                  </tr>
+                  <tr>
+                    <td>Probatova (2006b)</td>
+                    <td>Probatova, N. S. (2006b). Further chromosome studies on vascular plant species from Sakhalin, Moneron and Kurile Islands. Biodiversity and Biogeography of Sakhalin Island, 2, 93–110.</td>
+                  </tr>
+                  <tr>
+                    <td>Pustahija et al. (2013)</td>
+                    <td>Pustahija, F., Brown, S. C., Bogunić, F., Bašić, N., Muratović, E., Ollier, S., Hidalgo, O., Bourge, M., Stevanović, V., Siljak-Yakovlev, S. (2013). Small genomes dominate in plants growing on serpentine soils in West Balkans, an exhaustive study of 8 habitats covering 308 taxa. Plant and Soil, 373(1–2), 427–453. https://doi.org/10.1007/s11104-013-1794-x</td>
+                  </tr>
+                  <tr>
+                    <td>Rentsch et al. (2020)</td>
+                    <td>Rentsch, J. D., Hardee, L. J., Shelley, C. E., Williams, M. T. (2020). The Complete Plastid Genome of Neottia bifolia (Raf.) Baumbach (Orchidaceae): Insights Into Chlorophyllous and Achlorophyllous Plastid Genomes. Castanea, 85(2), 285. https://doi.org/10.2179/0008-7475.85.2.285</td>
+                  </tr>
+                  <tr>
+                    <td>Rewicz et al. (2018)</td>
+                    <td>Rewicz, A., Rewers, M., Jędrzejczyk, I., Rewicz, T., Kołodziejek, J., Jakubska-Busse, A. (2018). Morphology and genome size of Epipactis helleborine (L.) Crantz (Orchidaceae) growing in anthropogenic and natural habitats. PeerJ, 6, e5992. https://doi.org/10.7717/peerj.5992</td>
+                  </tr>
+                  <tr>
+                    <td>Romano Campo (1995)</td>
+                    <td>Romano, S., Campo, G. (1995). In Numeri cromosomici per la flora italiana. Informatore Botanico Italiano, 27(1), 17–20.</td>
+                  </tr>
+                  <tr>
+                    <td>Roy Sharma (1972)</td>
+                    <td>Roy, S. C., Sharma, A. K. (1972). Cytological studies on Indian Orchids. Proc.  Indian Nat. Sci. Acad. Biol., 38, 72–86.</td>
+                  </tr>
+                  <tr>
+                    <td>Ruiz (1995)</td>
+                    <td>Ruiz, L. (1995) In Mediterranean Chromosome Number Reports, 5, 559-589. Flora Mediterranea, 4, 363-373.</td>
+                  </tr>
+                  <tr>
+                    <td>Santhan Rajasekaran (1993)</td>
+                    <td>Santhan, P., Rajasekaran, K. (1993). Karyological study on montana Reichb. f (Orchidaceae). Current Science, 64(5), 321–322.</td>
+                  </tr>
+                  <tr>
+                    <td>Schawarzacher (1980)</td>
+                    <td>Schawarzacher, G. (1980). Karyotypen und Chromosomenbänderungen bei heimischen Arten der Gattung Cephalanthera (Orchidaceae).  Term Paper. Universität Wien.</td>
+                  </tr>
+                  <tr>
+                    <td>Schostman (1970)</td>
+                    <td>Schostman, H. D. (1970). Contribution á la caryologie des Angiospermes de la Sologne et du Val de Loire. Bulletin Du Centre d’Etudes et de Recherches Scientifiques Biarritz, 8, 21–63.</td>
+                  </tr>
+                  <tr>
+                    <td>Schwarzacher Schweizer (1982)</td>
+                    <td>Schwarzacher, T., Schweizer, D. (1982). Karyotype analysis and heterochromatin differentiation with Giemsa C-banding and fluorescent counterstaining in Cephalanthera (Orchidaceae). Plant Systematics and Evolution, 141, 91–113.</td>
+                  </tr>
+                  <tr>
+                    <td>Schwarzacher et al. (1980)</td>
+                    <td>Schwarzacher, T., Ambros, P., Schweizer, D. (1980). Application of Giemsa banding to orchid karyotype analysis. Plant Systematics and Evolution, 134, 293–297.</td>
+                  </tr>
+                  <tr>
+                    <td>Scrugli (1977)</td>
+                    <td>Scrugli, A. (1977). In Numeri cromosomici per la flora italiana:331-347. Informatore Botanico Italiano, 9(2), 116–126.</td>
+                  </tr>
+                  <tr>
+                    <td>Scrugli (1978)</td>
+                    <td>Scrugli, A. (1978). In Numeri cromosomici per la flora italiana:526-533. Informatore Botanico Italiano, 10(3), 414–421.</td>
+                  </tr>
+                  <tr>
+                    <td>Scrugli (1980)</td>
+                    <td>Scrugli, A. (1980). In Numeri cromosomici per la flora italiana: 728-732. Informatore Botanico Italiano, 12(2), 149–153.</td>
+                  </tr>
+                  <tr>
+                    <td>Scrugli (1982)</td>
+                    <td>Scrugli, A. (1982). In Numeri cromosomici per la flora italiana:868-872. Informatore Botanico Italiano, 14(2–3), 229–233.</td>
+                  </tr>
+                  <tr>
+                    <td>Scrugli et al. (1976)</td>
+                    <td>Scrugli, A., De Martis, B., Mulas, B. (1976). In Numeri cromosomici per la flora italiana:238-249. Informatore Botanico Italiano, 8(1), 82–91.</td>
+                  </tr>
+                  <tr>
+                    <td>Semerenko (1989)</td>
+                    <td>Semerenko, L. V. (1989). Chromosome numbers in some members of the families Asteraceae, Fabaceae, Orchidaceae and Poaceae from the Berezinsky Biosphere Reservation (Byelorussia) flora. Bot. Žhurn. (Moscow Leningrad), 74, 1671–1673.</td>
+                  </tr>
+                  <tr>
+                    <td>Silvestre (1983)</td>
+                    <td>Silvestre, S. (1983). In Números cromosómicos para la flora española 257-300. Lagascalia, 12, 133–135.</td>
+                  </tr>
+                  <tr>
+                    <td>Simon (1968)</td>
+                    <td>Simon, W. (1968). Chromosome numbers and B-chromosome in Listera. Caryologia, 21, 181–189.</td>
+                  </tr>
+                  <tr>
+                    <td>Singh (1983)</td>
+                    <td>Singh, F. (1983). ln IOPB Chromosome Number Reports LXXII. Taxon, 32, 140–141.</td>
+                  </tr>
+                  <tr>
+                    <td>Skalińska et al. (1961)</td>
+                    <td>Skalińska, M., Piotrowicz, M., Sokołowska-Kulczycka, A. (1961). Further additions to chromosome numbers of Polish Angiosperms. Acta Societatis Botanicorum Poloniae, 30(3–4), 463–489. https://doi.org/10.5586/asbp.1961.030</td>
+                  </tr>
+                  <tr>
+                    <td>Skalińska et al. (2015)</td>
+                    <td>Skalińska, M., Piotrowicz, M., Sokołowska-Kulczycka, A. (2015). Further additions to chromosome numbers of Polish Angiosperms. Acta Societatis Botanicorum Poloniae, 30(3–4), 463–489. https://doi.org/10.5586/asbp.1961.030</td>
+                  </tr>
+                  <tr>
+                    <td>Skalińska et al. (2017)</td>
+                    <td>Skalińska, M., Banach-Pogan, E., Wcisło, H. (2017). Further studies in chromosome numbers of Polish Angiosperms. Acta Societatis Botanicorum Poloniae, 26(1), 215–246. https://doi.org/10.5586/asbp.1957.011</td>
+                  </tr>
+                  <tr>
+                    <td>Sokolovskaya (1966)</td>
+                    <td>Sokolovskaya, A. P. (1966). Geograficheskoe rasprostrane nie poliploidnykh vidov rastenity (Issledovania flory Primovskago Kraya). Vestnik Leningradskogo Universiteta. Seriia Biologii, 3, 92–100.</td>
+                  </tr>
+                  <tr>
+                    <td>Stepanov Muratova (1992)</td>
+                    <td>Stepanov, N. V., Muratova, E. N. (1992). Chromosome numbers in some species of higher plants of flora of the Krasnoyarsk region. Botanicheskii Zhurnal, 77(7), 125–126.</td>
+                  </tr>
+                  <tr>
+                    <td>Tanaka (1965)</td>
+                    <td>Tanaka, R. (1965). Chromosome number of some species of Orchidaceae from Japan and its neighbouring areas. Journal of Japanese Botany, 40, 65–77.</td>
+                  </tr>
+                  <tr>
+                    <td>Tanaka (1971)</td>
+                    <td>Tanaka, R. (1971). Types of resting nuclei in Orchidaceae. Botanical Magazine (Tokyo), 84, 118–122.</td>
+                  </tr>
+                  <tr>
+                    <td>Tanaka Kamemoto (1984)</td>
+                    <td>Tanaka, R., Kamemoto, H. (1984). Chromosomes in orchids: counting and numbers. In J. Arditti (Ed.), Orchid biology: reviews and perspectives III (pp. 324–410). Cornell University Press.</td>
+                  </tr>
+                  <tr>
+                    <td>Tanaka Yokota (1982)</td>
+                    <td>Tanaka, R., Yokota, M. (1982). Karyotype of Cephalanthera subaphylla, Orchidaceae. Chromosome Information Service, 33, 34–36.</td>
+                  </tr>
+                  <tr>
+                    <td>Taylor (1967)</td>
+                    <td>Taylor, R. L. (1967). In IOPB Chromosome Number Reports XIII. Taxon, 16, 445-461.</td>
+                  </tr>
+                  <tr>
+                    <td>Taylor Brockman (1966)</td>
+                    <td>Taylor, R. L., Brockman, R. P. (1966). CHROMOSOME NUMBERS OF SOME WESTERN CANADIAN PLANTS. Canadian Journal of Botany, 44(8), 1093–1103. https://doi.org/10.1139/b66-117</td>
+                  </tr>
+                  <tr>
+                    <td>Taylor Mulligan (1968)</td>
+                    <td>Taylor, R. L., Mulligan, G. A. (1968). Flora of the Queen Charlotte Islands. Part 2. Cytological aspects of the Vascular Plants. Queen’s Printer.</td>
+                  </tr>
+                  <tr>
+                    <td>Titz (1966)</td>
+                    <td>Titz, W. (1966). Chromosomenzhlen dreier Angiospermenarten aus Osterreich. Osterreich. Bot. Zeitschr., 113(2), 187–190.</td>
+                  </tr>
+                  <tr>
+                    <td>Torosian (1990)</td>
+                    <td>Torosian, G. K. (1990). Torosian, G. K. 1990. Chromosome numbers of some Armenian Orchidaceae. Biological Journal of Armenia, 43, 256–259.</td>
+                  </tr>
+                  <tr>
+                    <td>Uhríkov Májovský (1980)</td>
+                    <td>Uhríkov, A., Májovský, J. (1980). In  IOPB Chromosome Number Reports LXIX, Taxon, 29, 5-6.</td>
+                  </tr>
+                  <tr>
+                    <td>Uhríková Feráková (1978)</td>
+                    <td>Uhríková, A., Feráková , V. (1978). ln IOPB Chromosome Number Reports LXI. Taxon, 27, 4.</td>
+                  </tr>
+                  <tr>
+                    <td>Uhríková Králik (1980)</td>
+                    <td>Uhríková, A., Králik, E. (1980a). ln IOPB Chromosome Number Reports LXIX. Taxon, 29, 5–6.</td>
+                  </tr>
+                  <tr>
+                    <td>Uhríková Schwarzová (1976)</td>
+                    <td>Uhríková, A., Schwarzová, T. (1976). ln IOPB Chromosome Number Reports LIII. Taxon, 25, 4.</td>
+                  </tr>
+                  <tr>
+                    <td>Verlaque et al. (1987)</td>
+                    <td>Verlaque, R., Seidenbinder, M., Reynaud, C. (1987). Recherches cytotaxonomiques sur la spéciation en région Méditerranéenne III: spezies aneuploides. Biol.-Ecol. Medit., 10, 315–346.</td>
+                  </tr>
+                  <tr>
+                    <td>Veselý et al. (2012)</td>
+                    <td>Veselý, P., Bureš, P., Šmarda, P., Pavlíček, T. (2012). Genome size and DNA base composition of geophytes: the mirror of phenology and ecology? Annals of Botany, 109(1), 65–75. https://doi.org/10.1093/aob/mcr267</td>
+                  </tr>
+                  <tr>
+                    <td>Vij Shekhar (1985)</td>
+                    <td>Vij, S. P. Shekhar, N. (1985). In: IOPB Chromosome Number Reports LXXXVII. Taxon, 34, 348–349.</td>
+                  </tr>
+                  <tr>
+                    <td>Vij Sood (1986)</td>
+                    <td>Vij, S. P., Sood, R. (1986). Cytology in relation to morphology in Spiranthes lancea (Sw.) Backer. In S. P. Vij (Ed.), Biology, Conservation, and Culture of Orchids. New Delhi, for Orchid Society of India, Affiliated East–West Press (pp. 147–161).</td>
+                  </tr>
+                  <tr>
+                    <td>Vij et al. (1981)</td>
+                    <td>Vij, S. P., Shekhar, N., Kuthiala, R. (1981). In IOPB Chromosome Number Reports LXXI. Taxon, 30, 512.</td>
+                  </tr>
+                  <tr>
+                    <td>Vij et al. (1982)</td>
+                    <td>Vij, S. P., Shekhar, N., Kuthiala, R. (1982). In IOPB Chromosome Number Reports LXXVII. Taxon, 31, 769.</td>
+                  </tr>
+                  <tr>
+                    <td>Vij et al. (1983)</td>
+                    <td>VIJ, S. P., Shekhar, N., Kuthiala, R., Sood, A. (1983). In IOPB Chromosome Number Reports LXXVIII. Taxon, 32, 138.</td>
+                  </tr>
+                  <tr>
+                    <td>Vij et al. (1995a)</td>
+                    <td>Vij, S. P., Vaidya, N., Kondo, K. (1995a). Chromosomes and their bearing on species diversification in Epipactis (Orchidaceae). Kromosomo, 77, 2646–2659.</td>
+                  </tr>
+                  <tr>
+                    <td>Vij et al. (1995b)</td>
+                    <td>Vij, S. P., Vaidya, N., Kondo, K. (1995b). The chromosomes of Neottia listeroides Lindl. (Orchidaceae), a reinvestigation. Chromosome Information Service, 58, 27–30.</td>
+                  </tr>
+                  <tr>
+                    <td>Vosa (1983)</td>
+                    <td>Vosa, C. G. (1983). The ecology of B-chromosomes in Listera ovata (L.) R. Br. (Orchidaceae). Caryologia, 36, 113–120.</td>
+                  </tr>
+                  <tr>
+                    <td>Vosa Barlow (1972)</td>
+                    <td>Vosa, C. G., Barlow, P. W. (1972). Meiosis and B-Chromosomes in Listera Ovata (Orchidaceae). Caryologia, 25(1), 1–8. https://doi.org/10.1080/00087114.1972.10796459</td>
+                  </tr>
+                  <tr>
+                    <td>Wegener(1966)</td>
+                    <td>Wegener, K. A. (1966). Ein Beitrag zur Zytologie von Orchideen aus dein Gebiet der DDR. Wissenschaftliche Zeitschrift Der Ernst-Moritz-Arndt-Universität Greifswald. Mathematisch-Naturwissenschaftliche Reihe, 15(1), 1–7.</td>
+                  </tr>
+                  <tr>
+                    <td>Yokota (1987)</td>
+                    <td>Yokota, M. (1987). Karyotypes and phylogeny in Orchidinae and allied subtribes. Pp. 70--79 in. In Proc. 12th World Orchid Conference 1987. 12th World Orchid Conference Organizing Committee, Tokyo.</td>
+                  </tr>
+                  <tr>
+                    <td>Yokota (1990)</td>
+                    <td>Yokota, M. (1990). Karyomorphological studies on Habenaria, Orchidaceae, and allied genera from Japan. Journal of Science of the Hiroshima University. Series B, Division 2, Botany, 23(1), 53–161.</td>
+                  </tr>
+                  <tr>
+                    <td>Yuan et al. (2018)</td>
+                    <td>Yuan, Y., Jin, X., Liu, J., Zhao, X., Zhou, J., Wang, X., Wang, D., Lai, C., Xu, W., Huang, J., Zha, L., Liu, D., Ma, X., Wang, L., Zhou, M., Jiang, Z., Meng, H., Peng, H., Liang, Y., … Huang, L. (2018). The Gastrodia elata genome provides insights into plant adaptation to heterotrophy. Nature Communications, 9(1), 1615. https://doi.org/10.1038/s41467-018-03423-5</td>
+                  </tr>
+                </tbody>
+            </table>
+
+
+        </section>
+
+
+    </main>
+
+
+    <!-- Início do rodapé -->
+    <footer>
+        <div id="container">
+            <div class="row">
+               <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
+                    <img id="logo-lab" src="images/logo-lab.png">
+               </div>
+               <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
+                <img id="logo-ufabc" src="images/logo-ufabc.png">
+           </div>
+           <div class="col-md-4 d-flex flex-column justify-content-center align-items-center">
+            <ul id="redes-sociais">
+              <li><a class="fs-6 fw-bold" href="#"><i class="fa-brands fa-instagram"></i> evo.plants</a></li>
+                <li><a class="fs-6  fw-bold" href="#"><i class="fa-brands fa-instagram"></i> hufabc</a></li>
+          </ul>
+       </div>
+            </div>
+        </div>
+    </footer>
+
+    <p id="rodape">Orchidaceae Cytogenetic Counts Database. <b>2022</b>.</p>
+    <!-- Início do rodapé -->
+
+</body>
+</html>
