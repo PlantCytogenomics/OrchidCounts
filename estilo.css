@@ -1,0 +1,251 @@
+body {
+    overflow-x: hidden;
+}
+
+#body-database {
+    overflow-x: scroll;
+}
+
+/* Efeito parallax no background*/
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Título do cabeçalho */
+#title1, #title2{
+    font-size: 2em;
+    font-weight: 600;
+
+}
+
+#title1 {
+    color: #248232;
+}
+
+#title2 {
+    color: #2D3A3A;
+}
+
+/* Subtítulo do cabeçalho */
+#subtitle {
+    font-size: 1.1em;
+    color: #2d3a3a;
+}
+
+/* Seção de Home*/
+#home {
+    height: 86.8vh;
+    background-repeat: repeat;
+    background-size: cover ;
+}
+
+#github-icon {
+    font-size: 7em;
+    color: #000;
+}
+
+.home-article {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 20px;
+    background: #FCFFFC;
+}
+
+.home-article a {
+    margin-top: -2em;
+}
+
+#dna-icon {
+    font-size: 7em;
+    color: #64af70;
+}
+
+#wrapper {
+    column-gap: 10em;
+}
+
+/* Seção About*/
+#about {
+    height: 60vh;
+    background-color: #F8F9FA;
+    overflow: hidden;
+}
+
+#fig-orchid {
+    border-radius: 10px;
+}
+
+#fig-orchid img {
+    height: 15em;
+    box-shadow:
+    2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+    100px 100px 80px rgba(0, 0, 0, 0.07);
+}
+
+/* Rodapé */
+footer {
+    height: 40vh;
+    display: grid;
+    align-items: center;
+}
+
+#logo-lab {
+    width: 10em;
+}
+
+#logo-ufabc {
+    width: 6em;
+}
+
+#redes-sociais a{
+    color: #2d3a3a;
+    text-decoration: none;
+}
+
+#redes-sociais a:hover{
+    color:#248232;
+}
+
+#redes-sociais {
+    list-style-type: none;
+}
+
+#rodape {
+    margin: 0;
+    color: #F8F9FA;
+    text-align: center;
+    background-color: #248232;
+}
+
+/* Filtros de busca */
+#search-group {
+    margin-top: 4em;
+    width: 50%;
+    padding: 1.2em;
+    background: #f3f3f3;
+    border-radius: 5px;
+}
+
+#search-group div div input, #search-group div div select {
+    border: 1px solid #64af70;
+    color:#2d3a3a ;
+    margin: 0.5em auto;
+}
+
+#search-group div div select {
+    color: #248232;
+}
+
+#div-search-btn {
+    display: flex;
+    align-content: flex-end;
+    justify-content: end;
+    margin-top: 0.5em;
+}
+
+/* Tabela do banco de dados */
+#tabela {
+    font-size: 0.8em;
+}
+
+#head-table {
+    text-align: center;
+    line-height: 2.3em;
+}
+
+#tabela tbody tr td:nth-child(4) {
+    font-style: italic;
+}
+
+#tabela, #corpo-tabela {
+    display: none;
+}
+
+#tabela tbody tr td {
+    text-align: center;
+}
+
+
+#tabela tbody tr td:nth-child(7),#tabela tbody tr td:nth-child(8), #tabela tbody tr td:nth-child(9), #tabela tbody tr td:nth-child(10) {
+    color: #248232;
+    font-weight: 500;
+}
+
+input {
+    font-size: 1em;
+}
+
+#link-github {
+    text-decoration: none;
+}
+
+/* Página de referências*/
+#references {
+    background-color: #F8F9FA;
+    height: auto;
+    padding: 20px;
+}
+
+#references-table tbody tr td:nth-child(1) {
+   color:#64af70;
+   width: auto;
+   margin-right: 100px;
+}
+
+#references-table tbody tr td:nth-child(2) {
+    width: auto;
+    padding: 20px 0 20px 20px;
+ }
+
+ #references-table tbody tr td:nth-child(2):hover{
+    font-size: 1.1em;
+ }
+
+ /* Responsividade */
+ @media (max-width: 767px) {
+
+    /*Página Inicial
+    ------------------------*/
+
+    /* Menu dropdown */
+    #subtitle {
+        display: none;
+    }
+
+    /* Seção Home */
+    #home {
+        padding: 2em;
+        height: auto;
+    }
+
+    /* Seção About */
+    #about {
+        height: auto;
+    }
+
+    #fig-orchid {
+        margin: 1.5em 0;
+    }
+
+    /* Rodapé */
+    footer {
+        height: auto;
+    }
+
+    footer #container div {
+       padding: 0.5em 0;
+    }
+
+ }
